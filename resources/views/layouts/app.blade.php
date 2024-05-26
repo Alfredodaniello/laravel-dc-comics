@@ -30,7 +30,7 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="comics">Comics</a>
+          <a class="nav-link active" aria-current="page" href="{{route('comics.index')}}">Comics</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{{route('comics.create')}}">Contacts</a>
