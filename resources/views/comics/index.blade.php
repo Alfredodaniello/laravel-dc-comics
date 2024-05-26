@@ -10,10 +10,11 @@
                         <div>
                             <img src={{$comic->thumb}} alt="">
                         </div>
-                        <div>{{$comic->title}}</div>
-                        <div class="description my-2">{{$comic->description}}</div>
+                        <div class="title">{{$comic->title}}</div>
+                        <div class="description my-3">{{$comic->description}}</div>
                         <h5>{{$comic->series}}</h5>
                         <h6>Prezzo: {{$comic->price}}</h6>
+                        <a href="comics/{{$comic->id}}">Dettagli</a>
                     </div>
                 </div>
             </div>
