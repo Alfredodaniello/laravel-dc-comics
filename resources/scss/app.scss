@@ -1,1 +1,10 @@
 @import '~bootstrap/scss/bootstrap';
+
+img {
+    width: 100%;
+}
+
+.description {
+    height: 100px;
+    overflow-y: scroll;
+}
