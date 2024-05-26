@@ -33,7 +33,7 @@
           <a class="nav-link active" aria-current="page" href="comics">Comics</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contacts</a>
+          <a class="nav-link" href="{{route('comics.create')}}">Contacts</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Pricing</a>
