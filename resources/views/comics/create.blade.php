@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container">
-        <h1 class="text-center">Cerca il tuo fumetto</h1>
+        <h1 class="text-center">Crea il tuo fumetto</h1>
         <form action="{{ route('comics.store') }}" method="POST">
             @csrf
             <div class="mb-3">

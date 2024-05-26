@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Comic;
 
-class ComicContoller extends Controller
+class ComicController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -71,9 +71,12 @@ class ComicContoller extends Controller
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
-    {
-        //
-    }
+{
+    $comic = Comic::findOrFail($id);
+    
+
+    return view('comics.edit', compact('comic'));
+}
 
     /**
      * Update the specified resource in storage.
@@ -84,7 +87,11 @@ class ComicContoller extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $comic = Comic::findOrFail($id);
+        $formData = $request->all();
+        $comic->update($formData);
+        return redirect()->route('comics.show', ['comic' => $comic->id]);
+
     }
 
     /**

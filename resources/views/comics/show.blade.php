@@ -11,6 +11,7 @@
             <div class="description my-3">{{$comic->description}}</div>
             <h5>{{$comic->series}}</h5>
             <h6>Prezzo: {{$comic->price}}</h6>
+            <a href="{{ route('comics.edit', ['comic' => $comic->id]) }}">Modifica</a>
         </div>
     </div>
 @endsection
