@@ -41,7 +41,7 @@
               <div class="mb-3">
                 <label for="description" class="form-label">Descrizione</label>
                 <div class="form-floating">
-                    <textarea class="form-control" placeholder="Leave a comment here" id="description" name="description"></textarea>
+                    <textarea class="form-control" placeholder="Leave a comment here" id="description" name="description" value="{{ old('description')}}"></textarea>
                     <label for="description">Descrizione</label>
                   </div>
               </div>
