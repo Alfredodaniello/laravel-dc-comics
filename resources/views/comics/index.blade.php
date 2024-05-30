@@ -15,6 +15,13 @@
                         <h5>{{$comic->series}}</h5>
                         <h6>Prezzo: {{$comic->price}}</h6>
                         <a href="comics/{{$comic->id}}">Dettagli</a>
+                        <div>
+                            <form action="{{ route('comics.destroy', ['comic' => $comic ->id])}}" method="POST">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" class="btn btn-danger">Elimina</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
